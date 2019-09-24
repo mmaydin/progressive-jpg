@@ -81,4 +81,5 @@ if [ -d "$destdir" ]; then
     if [ ! -z "$(ls -A $destdir)" ]; then
         mv $destdir/* $sourcedir
     fi
+    rm -r $destdir
 fi
